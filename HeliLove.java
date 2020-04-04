@@ -327,8 +327,8 @@ public class HeliLove extends JPanel implements KeyListener {
 
         for(int i=0; i<trees.size(); i++) {
             synchronized(this) {
-                g.setColor(Color.RED);
-                g.fillRect(trees.get(i).x, trees.get(i).y, 20, 20);
+                g.setColor(Color.PINK);
+                g.fillOval(trees.get(i).x, trees.get(i).y, 20, 20);
                 g.setColor(new Color(200,100,50));
                 g.fillRect(trees.get(i).x, trees.get(i).y+20, 20, 30);
             }
